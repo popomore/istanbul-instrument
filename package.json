@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "istanbul": "^0.4.5",
+    "istanbul-lib-instrument": "^1.7.1",
+    "readable-stream": "^2.2.9"
+  }
+}
