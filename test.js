@@ -20,12 +20,10 @@ const instrumenter2 = new Instrumenter({
   // autoWrap: false,
 });
 
-let t;
-
-t = Date.now();
+console.time('istanbul-lib-instrument');
 instrumenter1.instrumentSync(content);
-console.log('istanbul-lib-instrument', Date.now() - t);
+console.timeEnd('istanbul-lib-instrument');
 
-t = Date.now();
+console.time('istanbul@0.x');
 instrumenter2.instrumentSync(content);
-console.log('istanbul@0.x', Date.now() - t);
+console.timeEnd('istanbul@0.x');
